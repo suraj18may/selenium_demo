@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="testNG.Login_Test"/>
+      <methods>
+       <include name="launchBrowser"/>
+      <include name="openUrl"/>
+      <include name="login"/>
+      <include name="testFunctionality"/>
+      <include name="logout"/>
+      </methods>
+    </classes>
+  </test> 
+  <test name="Test1">
+    <classes>
+      <class name="testNG.Login_Test"/>
+      <methods>
+      <include name="launchBrowser"/>
+      <include name="openUrl"/>
+      <include name="login"/>
+      <include name="testFunctionality2"/>
+       <include name="logout"/>
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> 

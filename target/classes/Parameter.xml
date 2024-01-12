@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+<parameter name="fname" value="Mrinal"/>
+<parameter name="lname" value="Mishra"/>
+
+  <test name="Test">
+    <classes>
+      <class name="testNG.Parameters_value"/>
+      <methods>
+      <include name="parameter"/>
+      <include name="parameter2"/>
+      <include name="parameter3"/>
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
