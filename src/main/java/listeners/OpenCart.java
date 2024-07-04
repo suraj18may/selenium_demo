@@ -5,11 +5,8 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-public class OpenCart {
-
-	@Listeners(ListenerClass.class)
-	public class LoginTest  extends BaseClass {
+@Listeners(ListenerClass.class)
+public class OpenCart extends BaseClass {
 		@Test
 		public  void  OpenCartLogin() throws InterruptedException {
 		
@@ -21,5 +18,4 @@ public class OpenCart {
 			Thread.sleep(2000);
 			assertTrue(false);
 		}	
-}
 }

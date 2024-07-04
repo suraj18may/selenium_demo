@@ -9,9 +9,9 @@ public class test {
 
 
 		//		database connection
-		Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/opencartdemo","root","");
+		Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
 		Statement stmt=con.createStatement();
-		String query="update oc_customer set lastname='Mis' where firstname='Mrinal'";
+		String query="update mysql2 set lastname='Mishra1' where firstname='Mrinal'";
 		stmt.execute(query);
 
 

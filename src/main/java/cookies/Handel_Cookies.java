@@ -41,18 +41,7 @@ public class Handel_Cookies {
 		
 		driver.manage().deleteAllCookies();
 		cookie=driver.manage().getCookies();
-		System.out.println(cookie.size());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(cookie.size());		
 		
 		
 	}

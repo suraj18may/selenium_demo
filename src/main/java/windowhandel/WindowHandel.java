@@ -10,6 +10,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.sun.jdi.Method;
 
@@ -19,8 +20,8 @@ import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 public class WindowHandel {
 	
 	public static void main(String[] args) {
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.automationtesting.in/Windows.html");
 		driver.findElement(

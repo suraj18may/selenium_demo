@@ -10,21 +10,22 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class OpenCart {
 
 	public static void main(String[] args) throws SQLException {
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("http://localhost/opencart/index.php?route=account/register");
 
 		String fname="Mrinal";
 		String lname="Mishra";
-		String email="Mrinal@gmail.com";
+		String email="Mrinal2@gmail.com";
 		String phone="1234567891";
 		String password="1234";
 		String confirm="1234";
@@ -78,7 +79,7 @@ public class OpenCart {
 			{
 				System.out.println("Record found  : Test pass");
 				status=true;
-				break;
+ 				break;
 			}
 
 			if(status==false)

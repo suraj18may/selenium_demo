@@ -4,14 +4,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AlertWithTextBox {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver= new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver= new FirefoxDriver();
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[3]/a")).click();
 		driver.findElement(By.xpath("//*[@id=\"Textbox\"]/button")).click();

@@ -31,7 +31,7 @@ public class BaseClass {
 	public void teardown(){
 		driver.quit();
 	}
-	public void ScreenShot(String filename) {
+	public void ScreenShot1(String filename) {
 		if(ScreeShotFolder == null) {
 			LocalDateTime myDateObj = LocalDateTime.now();
 			DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("ddMMyyyyHHmmss");

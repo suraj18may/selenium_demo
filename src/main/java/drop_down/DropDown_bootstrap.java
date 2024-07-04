@@ -6,14 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DropDown_bootstrap {
 
 	public static void main(String[] args) {
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.dummyticket.com/dummy-ticket-for-visa-application/");
 		
@@ -24,7 +25,7 @@ public class DropDown_bootstrap {
 		
 		for(WebElement countrys:allcountry) 
 		{
-			countrys.getText();
+		
 			System.out.println(countrys.getText());
 			if(countrys.getText().equals("India"))
 			{
@@ -49,7 +50,7 @@ public class DropDown_bootstrap {
 			}
 		}
 		
-		
+//		driver.quit();
 		
 	}
 

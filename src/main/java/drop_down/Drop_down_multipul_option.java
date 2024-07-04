@@ -13,7 +13,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Drop_down_multipul_option {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriverManager.edgedriver().setup();
+		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver= new EdgeDriver();
 		driver.get("https://demo.automationtesting.in/Register.html");
 		
@@ -25,6 +25,7 @@ public class Drop_down_multipul_option {
 		
 		for(WebElement option:opt)
 		{
+			System.out.println(option.getText());
 			if(option.getText().equals("APIs"))
 			{
 				option.click();

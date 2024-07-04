@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -17,8 +18,8 @@ public class Dynamic_WebTable {
 		
 		
 		
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver=new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://money.rediff.com/gainers/bsc/daily/groupa");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
